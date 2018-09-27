@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0%;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0px 1px 17px 1px rgba(0,0,0, .3);
+}
+header .header-middle {
+    text-align: center; 
+}
+
+header .header-middle img{
+    height: 116px;
+}
+
+.nav-bar{
+    width: 100%;
+    text-align: center;
+
+}
+ 
+.nav-bar ul{
+    border-top: 1px solid #ddd;
+    
+    
+}
+
+.nav-bar ul li{
+    display: inline-block;
+    color: black;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-weight: 600;
+    height: 60px;
+    line-height: 60px;
+    padding: 21px 25px;
+}
+.nav-bar ul li a:hover{
+    background-color: #eee;
+    color: #FFAD4D;
+}
+ 
+section{
+    width: 100%;
+    height: 463px;
+}
+footer {
+    width: 100%;
+    height: 140px;
+    background-color: #29333C;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+footer p{
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.show-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+    cursor: pointer;
+}
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+/*Responsive Styles*/
+@media screen and (max-width : 760px){
+    /*Make dropdown links appear inline*/
+    ul {
+        position: absolute;
+        display: none;
+        width: 100%;
+    }
+    /*Create vertical spacing*/
+    li {
+        width: 100%;
+        margin-bottom: 1px;
+        border-bottom: 1px solid #ddd;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:block;
+    }
+}
