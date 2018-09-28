@@ -5,7 +5,9 @@
 body{
     margin: 0%;
 }
-
+/* --============================================================================================ 
+                                        HEADER AND FOOTER
+ --============================================================================================ */
 header {
     width: 100%;
     height: 200px;
@@ -68,6 +70,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin-top: 30px;
 }
 
 footer p{
@@ -84,6 +87,7 @@ footer p{
     display: none;
     cursor: pointer;
 }
+/* --====  RESPONSIVE======= */
 /*Hide checkbox*/
 input[type=checkbox]{
     display: none;
@@ -93,12 +97,20 @@ input[type=checkbox]:checked ~ #menu{
     display: block;
 }
 /*Responsive Styles*/
+
+@media screen and (max-width : 380px){
+    header .header-middle img{
+        height: 84px;
+        margin-top: 43px;
+    }
+}
 @media screen and (max-width : 760px){
     /*Make dropdown links appear inline*/
     ul {
         position: absolute;
         display: none;
         width: 100%;
+        background-color: #fff;
     }
     /*Create vertical spacing*/
     li {
@@ -115,3 +127,129 @@ input[type=checkbox]:checked ~ #menu{
         display:block;
     }
 }
+/* --====  RESPONSIVE======= */
+/* --============================================================================================ 
+                                        HEADER AND FOOTER
+ --============================================================================================ */
+
+ /* --============================================================================================ 
+                                        CONTACT.HTML
+ --============================================================================================ */
+.image-map{
+    padding: 50px 20px 20px 50px;
+    float: left;
+    width: 34%;
+}
+.image-map img{
+    height: 300px;
+}
+.image-map .contact-box{
+    text-align: center;
+}
+.image-map .contact-box .contact-info{
+    padding-left: 20px;
+    line-height: 1.5;
+}
+.container{
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    float: left;
+    width: 66%;
+}
+.container h1{
+    font-size: 30px;
+    color: #FFC107;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.input-border{
+    border-bottom: 2px solid #d9d9d9;
+    margin-bottom: 20px;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    box-sizing: border-box;
+    margin-top: 6px;
+    resize: vertical;
+    outline: none;
+    font-size: 18px;
+}
+.focus-border {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+.focus-border::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: all 0.4s;
+    background: #7f7f7f;
+}
+
+input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    box-sizing: border-box;
+    margin-top: 6px;
+    resize: vertical;
+    outline: none;
+    font-size: 18px;
+}
+.message-box{
+    margin-top: 24px;
+}
+
+input[type=submit] {
+    background-color: #FFC107;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type=submit]:hover {
+    background-color: #FFEB3B;
+}
+/*Responsive Styles*/
+@media screen and (max-width : 1199px){
+    .container {
+        width: 51%;
+}
+.image-map {
+    padding: 50px 10px 20px 10px;
+    float: left;
+    width: 49%;
+}
+@media screen and (max-width : 760px){
+    .container {
+        width: 100%;
+}
+.image-map {
+    width: 100%;
+    text-align: center;
+}
+.image-map img {
+    height: 200px;
+}
+/* --====  RESPONSIVE======= */
+
+ /* --============================================================================================ 
+                                        CONTACT.HTML
+ --============================================================================================ */
+
+
