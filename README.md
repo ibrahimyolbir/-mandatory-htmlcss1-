@@ -9,7 +9,7 @@ For this mandatory exercise ​you should work on master branch only​.
 2. Follow the instructions that GitHub gives you; create a local repository and add a remote
 or clone the recently created repository.
 
-###Submission
+### Submission
 When you submit the exercise in PingPong, before the deadline, you will enter a link to your repository, such as:
 
 https://github.com/mygithubusername/mandatory-htmlcss1
